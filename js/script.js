@@ -10,12 +10,12 @@ function countdowm(dateEnd) {
 
 	function calculate() {
 		var dateStart = new Date();
-		var dateStart = new Date (dateStart.getFullYear(),
-		dateStart.getUTCMonth(),
-		dateStart.getUTCDate(),
-		dateStart.getUTCHours(),
-		dateStart.getUTCMinutes(),
-		dateStart.getUTCSeconds());
+		var dateStart = new Date(dateStart.getFullYear(),
+			dateStart.getUTCMonth(),
+			dateStart.getUTCDate(),
+			dateStart.getUTCHours(),
+			dateStart.getUTCMinutes(),
+			dateStart.getUTCSeconds());
 		var timeRemaining = parseInt((dateEnd - dateStart.getTime()) / 1000)
 
 		if (timeRemaining >= 0) {
@@ -36,7 +36,7 @@ function countdowm(dateEnd) {
 		}
 	}
 
-	function display(days, hours, minutes, seconds) {}
+	function display(days, hours, minutes, seconds) { }
 }
 
-countdowm ('08/18/2021 02:00:00 AM');
+countdowm('08/18/2021 02:00:00 AM');
